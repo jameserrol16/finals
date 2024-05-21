@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <title>TechWave Solutions: Products and Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .footer {
+            background-color: #c7decc;
+        }
+
+        .footer {
+            color: #000;
+        }
+        .navbar-custom {
+            min-height: 50px;
+            padding: 15px 10px;
+            background-color: #c7decc;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            width: 10px;
+        }
+    .carousel-item img {
+    width: 50%;
+    height: 50%;
+  }
+         .card {
+            margin: 15px;
+            background-color: white; 
+            color: black; 
+            cursor: pointer; 
+            text-align: center; 
+        }
+        .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black; 
+  }
+        .card-container {
+      display: flex;
+      gap: 1rem;
+    }
+        .card:hover {
+            background-color: white; 
+        }
+        .card a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+        .card-img-top {
+            display: block;
+            margin: 0 auto; 
+        }
+        header {
+            
+            color: #fff;    
+            padding-top: 30px;
+            min-height: 70px;
+            
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .products, .services {
+            margin: 20px 0;
+            padding: 20px;
+            background: beige;
+            border-radius: 5px;
+        }
+        .products h2, .services h2 {
+            color: #333;
+        }
+        .product, .service {
+            margin-bottom: 20px;
+        }
+        .product h3, .service h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #77aaff;
+        }
+        .product p, .service p {
+            margin: 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Home</a>
+        <a class="navbar-brand" href="About_US.html">About Us</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  
+                    
+                </li>
+                <li class="nav-item"><a class="nav-link" href="valuing_environment.html">Valuing Environment</a></li>
+                <li class="nav-item"><a class="nav-link" href="personal.html">Personnel</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<div class="container">
+
+    <div class="products">
+        <h2>Peripherals</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-container d-flex justify-content-around">
+                  
+                  <div class="card" style="width: 18rem;">    
+                    <a href="processor.html" >       
+                    <img src="proc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">              
+                      <h5 class="card-title">Processor</h5>
+                      <br>
+                      <p class="card-text">High-performance processor designed for gaming and professional applications.</p>                  
+                    </div>
+                  </a>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="motherboard.html">
+                    <img src="mo.jpg" class="card-img-top" alt="..." style="height: 50%; width: 50%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Motherboard</h5>
+                      <br>
+                      <p class="card-text">High-performance motherboard designed for gaming and professional applications.</p>
+                    </div>
+                  </a>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="graphics.html">
+                    <img src="graphics.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Graphics Card</h5>
+                      <br>
+                      <p class="card-text">High-performance graphics card designed for gaming and professional applications.</p>
+                    </div>
+                  </a>
+                  </div>               
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-container d-flex justify-content-around">                 
+                  <div class="card" style="width: 18rem;">
+                    <a href="monitor.html">
+                    <img src="monitor.png" class="card-img-top" alt="..." style="height: 50%; width: 50%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Monitor</h5>
+                      <p class="card-text">High-resolution monitor designed for immersive gaming and professional applications.</p>                    
+                    </div>
+                  </a>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="keyboard.html">
+                    <img src="keyboard.png" class="card-img-top" alt="..." style="height: 50%; width: 50%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Keyboard</h5>
+                      <p class="card-text">Ergonomic keyboard with customizable backlighting and responsive keys, ideal for gaming and productivity.</p>   
+                    </div>
+                  </a>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <a href="mouse.html">
+                    <img src="mouse.png" class="card-img-top" alt="..." style="height: 50%; width: 50%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Mouse</h5>
+                      <p class="card-text">Precision mouse with ergonomic design and customizable buttons, perfect for gaming and professional use.</p>                    
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>          
+          </div>
+          <h2>Desktops</h2>
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Product Carousel with Modals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            cursor: pointer;
+        }
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="set.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">HP PAV DT TP01-1127D/ CORE I5-10400F</h5>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#modal2">
+                <img src="i5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming Rig Core i5 7th GTX1050ti 4gb 22" LED monitor Desktop</h5>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#modal3">
+                <img src="earth.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+                <div class="card-body">
+                    <h5 class="card-title">EARTHSHAKER AMD Athlon 3000G System Unit Build</h5>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#modal4">
+                <img src="intel.png" class="card-img-top" alt="..." style="height: 60%; width: 60%;">
+                <div class="card-body">
+                    <h5 class="card-title">WFH INTEL Core i3 10100/8GB/240GB/Tecware mATX Chassis Multitasking Home and Office System Unit</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControl" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControl" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal1Label">HP PAV DT TP01-1127D/ CORE I5-10400F</h5>
+                
+            </div>
+            <div class="modal-body">
+                <img src="set.png" class="img-fluid" alt="...">
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Model Name: HP PAV DT TP01-1127D/ CORE I5-10400F</li>
+                                <li>Brand: HP</li>
+                                <li>Display: HP 3WL45AA 22m 21.5-inch Monitor</li>
+                                <li>Memory: 8 GB DDR4-2666 SDRAM (1 x 8 GB)</li>
+                                <li>Storage: 1 TB HDD storage; 256 GB SSD storage</li>
+                                <li>Product SKU: 195161060489</li>
+                                <li>Category: All Stocks, Computer, Desktop Computers, HP Desktop, Laptops & Computers, Latest</li>                          
+                            </ul>
+                            <p class="price">₱29,990.00</p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal2Label">Gaming Rig Core i5 7th GTX1050ti 4gb 22" LED monitor Desktop</h5>
+            </div>
+            <div class="modal-body">
+                <img src="i5.jpg" class="img-fluid" alt="...">
+                <h5> Product Description</h5>
+                <p>
+                  Gaming Rig Set Core i7 8th, Core i7 7th, Core i5 7th GTX1050ti 4gb 22" LED monitor Desktop set
+
+
+
+                  Budget Meal! Sale! Sale! Sale! Gaming RIG!! set with 22" monitor
+                  
+                  
+                  
+                  Introducing Our Budget Friendly Core i7 8th, Core i7 7th, Core i5 7th generation GTX1050Ti
+                  
+                  
+                  
+                  Experience Real Gaming For a very affordable price 
+                </p>
+                <h6>Product Specifications</h6>
+                <ul>
+                    <li>Gaming Focused
+                      Yes</li>
+                    <li>Storage Capacity
+                      500GB</li>
+                    <li>Number of Cores
+                      Quad-Core</li>
+                    <li>Processor Type
+                      Intel Core i7</li>
+                    <li>Optical Disk Drive
+                      No</li>
+                    <li>Operating System
+                      Windows</li>
+                    <li>Condition
+                      New</li>
+                    <li>Warranty Duration
+                      3 Months</li>    
+                    <li>Storage Type
+                      SSD + HDD</li>
+                    <li>Weight
+                      8kg</li>                            
+                </ul>
+                <p class="price">₱20,500</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal3Label">EARTHSHAKER AMD Athlon 3000G System Unit Build</h5>
+            </div>
+            <div class="modal-body">
+                <img src="earth.png" class="img-fluid" alt="...">
+                <h6>Product Specifications</h6>
+                <ul>
+                    <li>1 × AMD Athlon 3000G 2-Core, 4-Thread Unlocked Desktop Processor with Radeon Graphics</li>
+                    <li>1 × Emaxx B450M PRO AM4 AMD Motherboard EMX-B450M-PRO</li>
+                    <li>1 × Lexar THOR 8GB DDR4 3200MHz CL16 Heatsink Gaming Desktop Memory Black | White - Black</li>
+                    <li>1 × Gigabyte 480GB 2.5" SATA SSD Solid State Drive GP-GSTFS31480GNTD</li>
+                    <li>1 × CVS 1722 M-ATX Computer Case With 750W PSU</li>                           
+                </ul>
+                <p class="price">₱9,075.00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal4Label">WFH INTEL Core i3 10100/8GB/240GB/Tecware mATX Chassis Multitasking Home and Office System Unit</h5>
+            </div>
+            <div class="modal-body">
+                <img src="intel.png" class="img-fluid" alt="...">
+                <h5> Product Description</h5>
+                <p>
+                  Note: Thumbnail Photo is for case reference only. Kindly check the details for exact items.
+This is dynamic posting where brands or models may change automatically base on available stocks but same specifications unless we manually edit.
+All basic applications are installed. Other applications are by request, add at checkout note. Ready to use. Plug and Play.
+                </p>
+                <h6>Product Specifications</h6>
+                <ul>
+                    <li>Intel Core i3-10100 | 10105 Comet Lake Quad-Core 3.6 GHz LGA 1200 65W BX8070110100 Desktop Processor</li>
+                    <li>ASRock H510M-HDV/M.2 SE LGA 1200 Intel Motherboard</li>
+                    <li>Lexar THOR 8GB DDR4 3200MHz CL16 Heatsink Gaming Desktop Memory Black | White - Black</li>
+                    <li>LEXAR NS10 Lite 120GB | 240GB | 480GB Internal Solid State Drive - 240GB</li>
+                    <li>CVS 1722 M-ATX Computer Case With 750W PSU</li>                            
+                </ul>
+                <p class="price">₱12,540.00</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+          <h2>Laptops</h2>
+          <div id="carouselExampleControl1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#1modal">
+                        <img src="legion.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Legion Slim 5 16IRH8 82YA0037PH</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#2modal">
+                        <img src="lenovo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo IdeaPad 3 15IAU7 82RK011XPH</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#3modal">
+                        <img src="ipad.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo IdeaPad Slim 5 14IMH9 83DA0009PH</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#4modal">
+                        <img src="acer.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Asus X415MA-EB131T - Laptop Tiangge</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControl1" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControl1" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <div class="modal fade" id="1modal" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label">Legion Slim 5 16IRH8 82YA0037PH</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="legion.png" class="img-fluid" alt="...">
+                        <h5> Product Description</h5>
+                            <p>
+                              • Processor - Intel® Core™ i7-13700H
+                              • Graphics - NVIDIA® GeForce RTX™ 4060
+                              • Memory - 2x 8GB SO-DIMM DDR5-5200
+                              • Storage - 1TB SSD M.2 2280 PCIe® 4.0x4 NVMe®
+                              • Resolution - WQXGA (2560x1600)  
+                              • Panel size - 16-inch
+                              • Battery - Integrated 80Wh
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Processor	
+                                  Intel® Core™ i7-13700H, 14C (6P + 8E) / 20T, P-core 2.4 / 5.0GHz, E-core 1.8 / 3.7GHz, 24MB</li>
+                                <li>Graphics	
+                                  NVIDIA® GeForce RTX™ 4060 8GB GDDR6, Boost Clock 2370MHz, TGP 125W</li>
+                                <li>Chipset	
+                                  Intel® SoC Platform</li>
+                                <li>Memory	
+                                  2x 8GB SO-DIMM DDR5-5200</li>
+                                <li>Memory Slots	
+                                  Two DDR5 SO-DIMM slots, dual-channel capable</li>
+                                <li>Max Memory	
+                                  Up to 32GB DDR5-5200 offering</li>
+                                <li>Storage	
+                                  1TB SSD M.2 2280 PCIe® 4.0x4 NVMe®</li>
+                                <li>Storage Support	
+                                  Up to two drives, 2x M.2 SSD • M.2 2280 SSD up to 1TB</li>    
+                                <li>Storage Slot	
+                                  Two M.2 2280 PCIe® 4.0 x4 slots</li>
+                                <li>Card Reader	
+                                  4-in-1 Card Reader</li>                            
+                            </ul>
+                            <p class="price">₱97,999.00</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="2modal" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal2Label">Lenovo IdeaPad 3 15IAU7 82RK011XPH</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="lenovo.png" class="img-fluid" alt="...">
+                        <h5> Product Description</h5>
+                        <p>
+                          • Processor - Intel® Core™ i3-1215U
+• Graphics - Integrated Intel® UHD Graphics
+• Memory - 8GB Soldered DDR4-3200
+• Storage -512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®
+• Resolution - 1920x1080
+• Panel size - 15.6" 
+• Battery - Integrated 45Wh
+                        </p>
+                        <h6>Product Specifications</h6>
+                        <ul>
+                            <li>Processor	
+                              Intel® Core™ i3-1215U, 6C (2P + 4E) / 8T, P-core 1.2 / 4.4GHz, E-core 0.9 / 3.3GHz, 10MB</li>
+                            <li>Graphics	
+                              Integrated Intel® UHD Graphics</li>
+                            <li>Chipset	
+                              Intel® SoC Platform</li>
+                            <li>Memory	
+                              8GB Soldered DDR4-3200</li>
+                            <li>Memory Slots	
+                              One memory soldered to systemboard, one DDR4 SO-DIMM slot, dual-channel capable</li>
+                            <li>Max Memory	
+                              Up to 16GB (8GB soldered + 8GB SO-DIMM) DDR4-3200 offering</li>
+                            <li>Storage	
+                              512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®</li>
+                            <li>Storage Support	
+                              Models with 45Wh battery: one drive, 1x M.2 SSD • M.2 2242 SSD up to 1TB • M.2 2280 SSD up to 1TB</li>    
+                            <li>Storage Slot	
+                              Models with 45Wh battery: one M.2 slot • One M.2 2280 PCIe® 4.0 x4 slot</li>
+                            <li>Card Reader	
+                              SD Card Reader</li>                            
+                        </ul>
+                        <p class="price">₱28,999.00</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="3modal" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal3Label">Lenovo IdeaPad Slim 5 14IMH9 83DA0009PH</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="ipad.png" class="img-fluid" alt="...">
+                        <h5> Product Description</h5>
+                        <p>
+                          • Processor - Intel® Core™ Ultra 5 125H
+• Graphics - Intel® Arc™ Graphics
+• Memory - 16GB Soldered LPDDR5x-7467
+• Storage - 512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®
+• Resolution - 1920 x 1200
+• Panel size - 14"
+• Battery - Integrated 57Wh
+                        </p>
+                        <h6>Product Specifications</h6>
+                        <ul>
+                            <li>Processor	
+                              	Intel® Core™ Ultra 5 125H, 14C (4P + 8E + 2LPE) / 18T, Max Turbo up to 4.5GHz, 18MB</li>
+                            <li>Graphics	
+                              Integrated Intel® Arc™ Graphics</li>
+                            <li>Chipset	
+                              Intel® SoC Platform</li>
+                            <li>Memory	
+                              16GB Soldered LPDDR5x-7467</li>
+                            <li>Memory Slots	
+                              Memory soldered to systemboard, no slots, dual-channel</li>
+                            <li>Max Memory	
+                              16GB soldered memory, not upgradable</li>
+                            <li>Storage	
+                              512GB SSD M.2 2242 PCIe® 4.0x4 NVMe®</li>
+                            <li>Storage Support	
+                              One drive, up to 1TB M.2 2242 SSD</li>    
+                            <li>Storage Slot	
+                              One M.2 2280 PCIe® 4.0 x4 slot</li>
+                            <li>Card Reader	
+                              microSD Card Reader</li>                            
+                        </ul>
+                        <p class="price">₱56,999.00</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="4modal" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">Asus X415MA-EB131T - Laptop Tiangge</h5>
+                    </div>
+                    <div class="modal-body">
+                        <img src="acer.png" class="img-fluid" alt="...">
+                        <h5> Product Description</h5>
+                        <p>
+                          • Processor - Intel® Celeron® N4020 Processor 1.1 GHz 
+                          • Graphics - Intel® UHD Graphics 600
+                          • Memory - 4GB DDR4 SO-DIMM
+                          • Storage - 512GB M.2 NVMe™ PCIe® 3.0 SSD
+                          • Resolution - FHD (1920 x 1080) 16:9 aspect ratio
+                          • Panel size - 14.0-inch
+                          • Battery - 37WHrs, 2S1P, 2-cell Li-ion
+                        </p>
+                        <h6>Product Specifications</h6>
+                        <ul>
+                            <li>Part No	90NB0TG2-M01770</li>
+                            <li>Model Name	X415MA-EB131T</li>
+                            <li>EAN Code	4718017995528</li>
+                            <li>UPC Code	192876995525</li>
+                            <li>Operating System	Windows 10 Home - ASUS recommends Windows 10 Pro for business</li>
+                            <li>LCD cover-material	Plastic</li>
+                            <li>LCD cover-color	Slate Grey</li>
+                            <li>Top case-material	Plastic</li>    
+                            <li>Top case-color	Slate Grey</li>
+                            <li>Bottom case-material	Plastic</li>                            
+                        </ul>
+                        <p class="price">₱19,299.00</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+          <h2>Product Key</h2>
+          <div class="container mt-4">
+            <div class="d-flex justify-content-around flex-wrap">
+          <div class="card" style="width: 18rem;">          
+            <img src="mc1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Windows 11 Pro for Workstations Product Key For 1 PC, Lifetime</h5>
+              <p class="card-text">₱2,880.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="mc2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Windows 11 Pro Product Key For 1 PC, Lifetime</h5>
+              <p class="card-text">₱1,880.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="mc3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Windows 10 Pro for Workstations 32/64-bit Product Key For 1 PC, Lifetime</h5>
+              <p class="card-text">₱2,880.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="mc4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Windows 8.1 Professional 32/64-bit Product Key For 1 PC, Lifetime</h5>
+              <p class="card-text">₱1,680.00</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="services">
+        <h2>Services</h2>
+        <div class="container mt-4">
+            <div class="d-flex justify-content-around flex-wrap">
+          <div class="card" style="width: 18rem;">          
+            <img src="itcon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Windows 11 Pro for Workstations Product Key For 1 PC, Lifetime</h5>
+              <p class="card-text">Our IT consulting services help businesses leverage technology to achieve their goals. From infrastructure planning to cybersecurity, we provide expert guidance tailored to your needs.</p>
+              <p class="price">Price: Starting at $200/hr</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="custom.png" class="card-img-top" alt="..." style="height: 40%; width: 100%;">
+            <div class="card-body">
+              <h5 class="card-title">Custom Software Development</h5>
+              <p class="card-text">We offer custom software development services to create solutions that fit your business perfectly. Our team of experienced developers can build applications for web, mobile, and desktop platforms.</p>
+              <p class="price">Price: Starting at $100/hr</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="manage.png" class="card-img-top" alt="..." style="height: 40%; width: 100%;">
+            <div class="card-body">
+              <p class="card-title">Our managed IT services ensure your systems are always running smoothly. We offer 24/7 monitoring, maintenance, and support to keep your IT infrastructure in top shape.</p>
+              <br>
+              <p class="price">Price: Starting at $500/month</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="cloud.jpg" class="card-img-top" alt="..." style="height: 50%; width: 100%;">
+            <div class="card-body">
+              <p class="card-title">Cloud Solutions</p>
+              <p class="card-text">We provide comprehensive cloud solutions, including migration, deployment, and management. Our cloud experts can help you harness the power of cloud computing to improve efficiency and scalability.</p><br>
+              <p class="price">Price: Custom pricing</p>   
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="tech.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title">Our technical support services offer fast and reliable assistance for any tech issues you may encounter. Whether it's hardware or software, our team is ready to help.</p><br>
+              <p class="price">Price: Starting at $50/hr</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+</div>
+<footer class="footer mt-auto py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2024 News. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <title>TechWave Solutions: Products and Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .footer {
+            background-color: #c7decc;
+        }
+
+        .footer {
+            color: #000;
+        }
+        .navbar-custom {
+            min-height: 50px;
+            padding: 15px 10px;
+            background-color: #c7decc;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            width: 10px;
+        }
+        .carousel-item img {
+            width: 50%;
+            height: 50%;
+        }
+        .card {
+            margin: 15px;
+            background-color: white; 
+            color: black; 
+            cursor: pointer; 
+            text-align: center; 
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; 
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .card:hover {
+            background-color: white; 
+        }
+        .card a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+        .card-img-top {
+            display: block;
+            margin: 0 auto; 
+        }
+        header {
+            background: #333;
+            color: #fff;    
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .products {
+            margin: 20px 0;
+            padding: 20px;
+            background: grey;
+            border-radius: 5px;
+        }
+        .products h2 {
+            color: #333;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        .product h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #77aaff;
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <a class="navbar-brand" href="About_US.html">About Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product And Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html">View all</a></li>
+                            <li><a class="dropdown-item" href="monitor.html">Monitor</a></li>
+                            <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
+                            <li><a class="dropdown-item" href="keyboard.html">Keyboard</a></li>
+                            <li><a class="dropdown-item" href="processor.html">Processor</a></li>
+                            <li><a class="dropdown-item" href="motherboard.html">Motherboard</a></li>
+                            <li><a class="dropdown-item" href="graphics.html">Graphics Card</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="valuing_environment.html">Valuing Environment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personal.html">Personnel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="products">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="openModal()">
+                    <img src="key1.png" class="card-img-top" alt="Processor 1" style="height: 80%; width: 80%;">
+                    <div class="card-body">
+                        <p class="card-title">Redragon K617 FIZZ 60% Red Switch, Black/ Grey & White Case Wired RGB Gaming Keyboard</p>
+                        <p class="price">₱1,350.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal" tabindex="-1" aria-labelledby="ryzenModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ryzenModalLabel">Redragon K617 FIZZ 60% Red Switch, Black/ Grey & White Case Wired RGB Gaming Keyboard</h5>                          
+                        </div>
+                        <div class="modal-body">
+                            <img src="key1.png" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Dominate your gaming with the Redragon K617 FIZZ 60% Mechanical Keyboard. Engineered with responsive Red switches, its compact black/grey or white case delivers both style and functionality. Illuminate your setup with RGB lighting and experience precision gaming like never before.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Redragon</li>
+                                <li>Model: K617 FIZZ</li>
+                                <li>Switch: Red</li>
+                                <li>Color Case: Black/ Grey &White</li>
+                                <li>Connectivity: Wired RGB</li>
+                                <li>60% Wired & 2 Colors Keycaps: Redragon 60% keyboard in wired mode with fresh 2 colors mixed keycaps layout. Ultra-compact 61 keys with novel keycap color frees up precious desk space with vibrant elements.</li>
+                                <li>Hot-Swappable Red Switches: Most quiet mechanical switch, linear and soft key travel makes every click easy to register. Hot-swappable with other Redragon switches. Made to last with switches rated for 50 million keypresses.</li>
+                                <li>Vibrant RGB: Up to 20 presets backlighting modes are free to choose by the keyboard itself. Brightness and flowing speed is also adjustable on board. Select your own preferred modes for any playing</li>
+                                <li>Pro Software Customizable: Expand your options using the available software to design your own new modes and effects found on redragonshop. Macros with different keybindings or shortcuts for more efficient work and gaming.</li>
+                                <li>Dedicated for FPS Gamer: Place the keyboard proper straight on your desktop and no more crooked way for mouse space saving, your mouse will never hit the keyboard any more. Enjoy waving the mouse without any worries and go get that Team Kills.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal1()">
+                    <br>
+                    <br>
+                    <img src="key2.jpg" class="card-img-top" alt="Processor 1" style="height: 100%; width: 100%;">
+                    <div class="card-body">     
+                        <br>                   
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="card-title">A4Tech KRS-85 Usb Keyboard Black</p>
+                        <br>
+                        <p class="price">₱370.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal1" tabindex="-1" aria-labelledby="ryzenModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title1" id="ryzenModalLabel1">A4Tech KRS-85 Usb Keyboard Black</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="key2.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                The A4Tech KRS-85 USB Keyboard in black delivers reliable and comfortable typing experience. Its sleek design, responsive keys, and USB connectivity make it perfect for everyday use. Enhance your productivity with this durable and affordable keyboard solution.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: A4tech</li>
+                                <li>Keyboard: KRS-85</li>
+                                <li>Keycaps: A-Shape, Round Edge</li>
+                                <li>Hotkeys: 12 FN Multimedia Hotkeys</li>
+                                <li>Character: Laser Engraving</li>
+                                <li>Splash Proof: Yes</li>
+                                <li>Adjustable Keyboard Legs: Yes</li>
+                                <li>Rating: 5 V / 30 mA</li>
+                                <li>Dimension: 453 × 152 × 28 mm</li>
+                                <li>Weight: 580 g</li>
+                                <li>Cable Length: 150 cm</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal2()">
+                    <img src="key3.jpg" class="card-img-top" alt="Processor 1" style="height: 100%; width: 100%;">
+                    <div class="card-body">
+                        <br>
+                        <br>
+                        <p class="card-title">RAKK TALA 81 Keys White / Trimode / RGB / Universal Hotswap / Gasket Mount / Brown Switch</p>
+                        <br>
+                        <br>
+                        <p class="price">₱7,785.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal2" tabindex="-1" aria-labelledby="ryzenModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title1" id="ryzenModalLabel2">RAKK TALA 81 Keys White / Trimode / RGB / Universal Hotswap / Gasket Mount / Brown Switch</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="key3.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Dive into the ultimate typing experience with the RAKK TALA 81 Keys Mechanical Keyboard. Featuring universal hotswap, trimode RGB, and gasket mount, it's a masterpiece of customization. With tactile brown switches and a sleek white design, elevate your productivity and gaming in style.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Model name RAKK TALA</li>
+                                <li>Dimension (Product) 325x138x20mm</li>
+                                <li>Weight (Product) 850g</li>
+                                <li>Connection Type Triple Mode (wired, 2.4g, BT 5.0)</li>
+                                <li>of Keys 81 keys</li>
+                                <li>Mounting Gasket Mount</li>
+                                <li>Orientation of PCB North Facing</li>
+                                <li>Hotswap Kailh Universal Socket 5pin</li>                            
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal3()">
+                    <img src="key4.jpg" class="card-img-top" alt="Processor 1" style="height: 100%; width: 100%;">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-title">Fantech MAXPOWER MK853 RGB Gradient Red & Blue Switch Black & Pink Mechanical Gaming Keyboard</p>
+                        <br>
+                        <p class="price">₱1,591.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal3" tabindex="-1" aria-labelledby="ryzenModal3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal3">Fantech MAXPOWER MK853 RGB Gradient Red & Blue Switch Black & Pink Mechanical Gaming Keyboard</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="key4.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Unleash your gaming potential with Fantech MAXPOWER MK853 Mechanical Gaming Keyboard. Featuring RGB gradient lighting, red and blue switches for tactile response, and a stylish black and pink design. Elevate your gameplay with precision and style in every keystroke.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Fantech</li>
+                                <li>Model: MK853</li>
+                                <li>Color Case: Black and Pink</li>
+                                <li>Color Switch: Blue and Red</li>
+                                <li>Type of Switch: Mechanical (content)</li>
+                                <li>Switch Lifetime: 50 million clicks</li>
+                                <li>Replaceable: No</li>
+                                <li>Total Keys: 104</li>                            
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal4()">
+                    <img src="key5.png" class="card-img-top" alt="Processor 1" style="height: 75%; width: 75%;">
+                    <div class="card-body">
+                        <p class="card-title">RAKK LAM-ANG PRO MAX 87 Keys / Outemu Black / Cherry Keycaps</p>
+                        <br>
+                        <p class="price">₱2,995.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal4" tabindex="-1" aria-labelledby="ryzenModal4" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal4">RAKK LAM-ANG PRO MAX 87 Keys / Outemu Black / Cherry Keycaps</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="key5.png" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Experience peak performance with the RAKK LAM-ANG PRO MAX Mechanical Keyboard. Boasting 87 keys, universal hotswap, RGB, and gasket mount for optimal responsiveness. Outfitted with Outemu Black switches, a TFT screen, and Cherry keycaps, this keyboard redefines precision and style for your gaming and typing needs.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Model name RAKK Lam-ang Pro Max</li>
+                                <li>Dimension (Product) 362 x 135 mm</li>
+                                <li>Weight (Product) 745g</li>
+                                <li>Connection Type Triple Mode (wired, 2.4g, BT 5.0)</li>
+                                <li>of Keys 87 Keys</li>
+                                <li>Mounting Gasket Mount</li>
+                                <li>Orientation of PCB South Facing</li>
+                                <li>Hotswap Kailh Universal Socket 5pin</li>    
+                                <li>Switches Outemu Black (for pre-built)</li>
+                                <li>Keycaps Cherry Profile PBT Doubleshot (for prebuilt)</li>                            
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal5()">
+                    <img src="key6.png" class="card-img-top" alt="Processor 1" style="height: 75%; width: 75%;">
+                    <div class="card-body">
+                        <p class="card-title">Fantech ATOM MK886 Red Switch RGB Mechanical Keyboard Black</p>
+                        <br>
+                        <p class="price">₱1,250.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal5" tabindex="-1" aria-labelledby="ryzenModal5" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal5">Fantech ATOM MK886 Red Switch RGB Mechanical Keyboard Black</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="key6.png" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Unleash your typing with the Fantech ATOM MK886 Mechanical Keyboard. Its Red switches offer smooth keystrokes, while RGB backlighting illuminates your setup. The black keyboard exudes sophistication. Elevate your typing experience with style and precision for both work and play.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Full Size Form Factor</li>
+                                <li>Double Injection Keycaps</li>
+                                <li>16 Lighting Effects</li>
+                                <li>25 Keys Anti-Ghosting</li>
+                                <li>Adjustable Height</li>                          
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>                                
+        </div>
+    </div>    
+</div>
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 News. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<script>
+    function openModal() {
+        $('#ryzenModal').modal('show');
+    }
+</script>
+<script>
+    function openModal1() {
+        $('#ryzenModal1').modal('show');
+    }
+</script>
+<script>
+    function openModal2() {
+        $('#ryzenModal2').modal('show');
+    }
+</script>
+<script>
+    function openModal3() {
+        $('#ryzenModal3').modal('show');
+    }
+</script>
+<script>
+    function openModal4() {
+        $('#ryzenModal4').modal('show');
+    }
+</script>
+<script>
+    function openModal5() {
+        $('#ryzenModal5').modal('show');
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

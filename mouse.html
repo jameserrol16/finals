@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <title>TechWave Solutions: Products and Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .footer {
+            background-color: #c7decc;
+        }
+
+        .footer {
+            color: #000;
+        }
+        .navbar-custom {
+            min-height: 50px;
+            padding: 15px 10px;
+            background-color: #c7decc;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #000000;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .navbar-brand img {
+            max-height: 80px;
+            width: 10px;
+        }
+        .carousel-item img {
+            width: 50%;
+            height: 50%;
+        }
+        .card {
+            margin: 15px;
+            background-color: white; 
+            color: black; 
+            cursor: pointer; 
+            text-align: center; 
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; 
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .card:hover {
+            background-color: white; 
+        }
+        .card a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+        .card-img-top {
+            display: block;
+            margin: 0 auto; 
+        }
+        header {
+            background: #333;
+            color: #fff;    
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .products {
+            margin: 20px 0;
+            padding: 20px;
+            background: grey;
+            border-radius: 5px;
+        }
+        .products h2 {
+            color: #333;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        .product h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #77aaff;
+        }
+        .price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <a class="navbar-brand" href="About_US.html">About Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product And Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html">View all</a></li>
+                            <li><a class="dropdown-item" href="monitor.html">Monitor</a></li>
+                            <li><a class="dropdown-item" href="mouse.html">Mouse</a></li>
+                            <li><a class="dropdown-item" href="keyboard.html">Keyboard</a></li>
+                            <li><a class="dropdown-item" href="processor.html">Processor</a></li>
+                            <li><a class="dropdown-item" href="motherboard.html">Motherboard</a></li>
+                            <li><a class="dropdown-item" href="graphics.html">Graphics Card</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="valuing_environment.html">Valuing Environment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personal.html">Personnel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="products">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="openModal()">
+                    <img src="mouse1.jpg" class="card-img-top" alt="Processor 1" style="height: 80%; width: 80%;">
+                    <div class="card-body">
+                        <p class="card-title">Fantech X16 v2 Thor II RGB Gaming Mouse</p>
+                        <p class="price">₱550.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal" tabindex="-1" aria-labelledby="ryzenModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ryzenModalLabel">Fantech X16 v2 Thor II RGB Gaming Mouse</h5>                          
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse1.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Fantech X16 v2 Thor II RGB Gaming Mouse: Unleash power and precision with dynamic RGB lighting. Elevate your gaming experience with customizable buttons and ergonomic design. Dominate every battle with this advanced gaming mouse from Fantech.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Fantech</li>
+                                <li>Model: X16 v2 Thor II</li>
+                                <li>Sensor - Instant A825</li>
+                                <li>Resolution - 200-12,800 DPI</li>
+                                <li>IPS - 60</li>
+                                <li>Acceleration - 20G</li>
+                                <li>Polling Rate - 1000Hz</li>
+                                <li>Switch Type - Huano 10 million clicks</li>
+                                <li>Total Buttons - 6</li>
+                                <li>Shape - Ambidextrous, Both-handed</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal1()">
+                    <br>
+                    <br>
+                    <img src="mouse2.jpg" class="card-img-top" alt="Processor 1" style="height: 80%; width: 80%;">
+                    <div class="card-body">     
+                        <p class="card-title">A4Tech OP-330 1200 DPI Durable Button Life 4-way wheel Silent Clicks Usb Black Mouse Black</p>
+                        <br>
+                        <p class="price">₱150.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal1" tabindex="-1" aria-labelledby="ryzenModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title1" id="ryzenModalLabel1">A4Tech OP-330 1200 DPI Durable Button Life 4-way wheel Silent Clicks Usb Black Mouse Black</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse2.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                A4Tech OP-330 USB Mouse: Navigate with precision using 1200 DPI. Stylishly designed in sleek black for a comfortable grip. Reliable and efficient, it's the perfect accessory for seamless computing.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: A4tech</li>
+                                <li>Model: OP-330 </li>
+                                <li>Type: Wired</li>
+                                <li>Ergonomic Design: Symmetric</li>
+                                <li>Sensor: Optical</li>
+                                <li>Resolution: 1200 DPI</li>
+                                <li>Buttons No.: 3</li>
+                                <li>Port: USB</li>
+                                <li>Cable Length: 150 cm</li>
+                                <li>Net Weight:85 g (w/ cable)</li>
+                                <li>System Requirements: Windows 7 / 8 / 8.1 / 10</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal2()">
+                    <img src="mouse3.jpg" class="card-img-top" alt="Processor 1" style="height: 80%; width: 80%;">
+                    <div class="card-body">
+                        <br>
+                        <br>
+                        <p class="card-title">Rakk Alti BVR/ RGY Illuminated Gaming Mouse</p>
+                        <br>
+                        <br>
+                        <p class="price">₱350.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal2" tabindex="-1" aria-labelledby="ryzenModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title1" id="ryzenModalLabel2">Rakk Alti BVR/ RGY Illuminated Gaming Mouse</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse3.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                The Rakk Alti BVR/RGB Illuminated Gaming Mouse offers superior precision and style. With customizable RGB lighting, ergonomic design, and responsive buttons, it enhances gaming experience. Dominate the game with this high-performance mouse, combining functionality and aesthetic appeal.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Rakk</li>
+                                <li>Model: Alti</li>
+                                <li>Interface: USB</li>
+                                <li>Buttons: 6</li>
+                                <li>Scrolling Capability: yes</li>
+                                <li>Color: Black</li>
+                                <li>Maximum DPI: 4800</li>
+                         
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal3()">
+                    <img src="mouse4.jpg" class="card-img-top" alt="Processor 1" style="height: 100%; width: 100%;">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-title">Fantech Raigor II WG10 Black, Red and Gray Wireless Gaming Mouse</p>
+                        <br>
+                        <p class="price">₱245.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal3" tabindex="-1" aria-labelledby="ryzenModal3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal3">Fantech Raigor II WG10 Black, Red and Gray Wireless Gaming Mouse</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse4.jpg" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Embrace wireless freedom with the Fantech Raigor II WG10 Gaming Mouse. Dressed in Black, Red, and Gray, it boasts precision and style. Elevate your gaming experience with customizable features and ergonomic design. Unleash the gaming prowess with this sleek and responsive wireless mouse.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Fantech</li>
+                                <li>Model: Fantech Raigor II WG10</li>
+                                <li>Color: Black, Red and Gray</li>
+                                <li>Wireless Gaming Mouse</li>
+                                <li>5 Million clicks</li>
+                                <li>2.4 GHz</li>
+                                <li>AA Battery</li>
+                                <li>Power Saver</li>                            
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal4()">
+                    <img src="mouse5.png" class="card-img-top" alt="Processor 1" style="height: 105%; width: 105%;">
+                    <div class="card-body">
+                        <br>
+                        <br>
+                        <p class="card-title">Logitech G102 Light Sync Black and White Gaming Mouse</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="price">₱1,000.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal4" tabindex="-1" aria-labelledby="ryzenModal4" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal4">Logitech G102 Light Sync Black and White Gaming Mouse</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse5.png" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Step into precision gaming with the Logitech G102 Light Sync Gaming Mouse. Sleek in black and white, it offers responsive control and customizable RGB lighting. Elevate your gameplay with this stylish and high-performance accessory.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>BRAND: Logitech</li>
+                                <li>MODEL: G102</li>
+                                <li>COLOR: Black/White</li>
+                                <li>REQUIREMENTS: Windows 7 or later</li>
+                                <li>macOS 10.10 or later</li>
+                                <li>Chrome OSTM</li>
+                                <li>USB port</li>
+                                <li>USB data format: 16 bits/axis</li>    
+                                <li>USB report rate: 1000 Hz (1ms)</li>
+                                <li>Microprocessor: 32-bit ARM</li>                            
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="openModal5()">
+                    <img src="mouse6.png" class="card-img-top" alt="Processor 1" style="height: 105%; width: 105%;">
+                    <div class="card-body">
+                        <br>
+                        <p class="card-title">Fantech X5S Zeus V2 RGB Gaming Mouse</p>
+                        <br>
+                        <p class="price">₱550.00</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="modal fade" id="ryzenModal5" tabindex="-1" aria-labelledby="ryzenModal5" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title3" id="ryzenModal5">Fantech X5S Zeus V2 RGB Gaming Mouse</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <img src="mouse6.png" class="card-img-top" alt="Processor 1" style="height: 50%; width: 50%;">
+                            <h5> Product Description</h5>
+                            <p>
+                                Immerse in gaming glory with Fantech X5S Zeus V2 RGB Gaming Mouse. Precise control, customizable RGB lighting, ergonomic design, and advanced features make it a perfect choice for gamers. Dominate the game with style and precision, enhancing your gaming experience to the next level.
+                            </p>
+                            <h6>Product Specifications</h6>
+                            <ul>
+                                <li>Brand: Fantech</li>
+                                <li>Model: X5S Zeus</li>
+                                <li>Interface: USB</li>
+                                <li>Buttons: 7</li>
+                                <li>Scrolling Capability: yes</li> 
+                                <li>Color: Black</li>
+                                <li>Maximum DPI: 4800</li>                         
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>                                
+        </div>
+    </div>    
+</div>
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 News. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<script>
+    function openModal() {
+        $('#ryzenModal').modal('show');
+    }
+</script>
+<script>
+    function openModal1() {
+        $('#ryzenModal1').modal('show');
+    }
+</script>
+<script>
+    function openModal2() {
+        $('#ryzenModal2').modal('show');
+    }
+</script>
+<script>
+    function openModal3() {
+        $('#ryzenModal3').modal('show');
+    }
+</script>
+<script>
+    function openModal4() {
+        $('#ryzenModal4').modal('show');
+    }
+</script>
+<script>
+    function openModal5() {
+        $('#ryzenModal5').modal('show');
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
